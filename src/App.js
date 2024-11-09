@@ -117,7 +117,7 @@ function App() {
       setCurrentPageIndex((prevIndex) => prevIndex - 1);
     }
   }, [currentPageIndex]);
-
+  console.log("");
   const currentChapters = useMemo(() => currentBook?.chapter_ids || [], [currentBook]);
 
   return (
